@@ -10,12 +10,12 @@ class BasicLayout extends React.Component {
       <>
         <Layout>
           <Layout.Header>
-            <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["1"]}>
+            <Menu theme="dark" mode="horizontal" >
               <Item key="1">
                 <span><Link to="snow"></Link>Snow</span>
               </Item>
               <Item key="2">
-                <span>Transfer</span>
+                <span><Link to="transform"></Link>Transfer</span>
               </Item>
             </Menu>
           </Layout.Header>
