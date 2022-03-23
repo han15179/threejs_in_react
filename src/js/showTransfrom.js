@@ -2,7 +2,7 @@ import React from "react";
 import Stats from "stats.js";
 import * as THREE from "three";
 import TWEEN from "@tweenjs/tween.js";
-import gradient from "./gradient.png";
+import gradient from "../img/gradient.png";
 import ac_vertices from "./ac_vertices.js";
 import kv_vertices from "./kv_vertices.js";
 import { Button } from "antd";

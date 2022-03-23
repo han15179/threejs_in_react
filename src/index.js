@@ -3,8 +3,8 @@ import ReactDOM from "react-dom";
 import BasicLayout from "./BasicLayout";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./index.css";
-import Showsnow from "./showsnow";
-import ShowTransform from "./showTransfrom";
+import Showsnow from "./js/showsnow";
+import ShowTransform from "./js/showTransfrom";
 
 ReactDOM.render(
   <BrowserRouter>

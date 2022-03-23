@@ -1,8 +1,8 @@
 import React from "react";
 import Stats from "stats.js";
 import * as THREE from "three";
-import snow from "./snow.png";
-import trouble_sky from "./troubled-sky.jpg";
+import snow from "../img/snow.png";
+import trouble_sky from "../img/troubled-sky.jpg";
 
 class Showsnow extends React.Component {
   constructor(props) {
