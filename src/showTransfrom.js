@@ -229,9 +229,17 @@ class ShowTransform extends React.Component {
   }
 
   componentWillUnmount() {
-    console.log("unmount");
-    this.renderer.forceContextLoss();
-    this.renderer = null;
+    if (this.scene != null) {
+      console.log("unmount");
+      this.renderer.forceContextLoss();
+      this.scene = null;
+      this.camera = null;
+      this.renderer = null;
+      this.glist = [];
+      this.points = null;
+      this.stats = null;
+      TWEEN.removeAll();
+    }
   }
 
   render() {
@@ -251,7 +259,7 @@ class ShowTransform extends React.Component {
               this.setState({
                 loading: false,
               });
-            },2000);
+            }, 2000);
           }}
         >
           transform
